@@ -1,0 +1,31 @@
+Paragraph 
+
+After reviewing the results for the functions in runtime.js, I noticed that the length of time each function took to run directly correlated to its size. The larger the array was, the longer it took to run and the smaller the array the shorter its runtime was. This is true for both "insert" and "append", however, the runtime for "insert" did pretty drastically increase as the array sizes became larger. I'm not sure if this was due to my own human error at some point in the process or if it was due to the function having to reassign a new index to each item at the beginning. Either way I believe "append" to be overall much more efficient than "insert".
+
+
+Results 
+
+tinyArray
+
+"insert" was 3.4
+"append" was 4.7
+
+smallArray
+
+"insert" was 9.1
+"append" was 5.9
+
+mediumArray
+
+"insert" was 2.4
+"append" was 28.0
+
+largeArray
+
+"insert" was 6.4625
+"append" was 104.3
+
+extraLargeArray
+
+"insert" was 643.7674
+"append" was 2.8313

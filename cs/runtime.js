@@ -60,3 +60,59 @@ let resultsInsert = perf.stop();
 console.log('Results for the extraLargeArray');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
+
+// My code 
+
+// tinyArray
+
+perf.start();                         // Starts timer
+doublerAppend(tinyArray);
+let resultsAppendTiny = perf.stop();  // Stops timer and save time results
+perf.start();
+doublerInsert(tinyArray);
+let resultsInsertTiny = perf.stop();
+
+console.log('Results for the tinyArray');
+console.log("insert", resultsInsertTiny.preciseWords);
+console.log("append", resultsAppendTiny.preciseWords);
+
+// smallArray
+
+perf.start();                          // Starts timer
+doublerAppend(smallArray);
+let resultsAppendSmall = perf.stop();  // Stops timer and save time results
+perf.start();
+doublerInsert(smallArray);
+let resultsInsertSmall = perf.stop();
+
+console.log('Results for the smallArray');
+console.log("insert", resultsInsertSmall.preciseWords);
+console.log("append", resultsAppendSmall.preciseWords);
+
+// mediumArray
+
+perf.start();                           // Starts timer
+doublerAppend(mediumArray);
+let resultsAppendMedium = perf.stop();  // Stops timer and save time results
+perf.start();
+doublerInsert(tinyArray);
+let resultsInsertMedium = perf.stop();
+
+console.log('Results for the mediumArray');
+console.log("insert", resultsInsertMedium.preciseWords);
+console.log("append", resultsAppendMedium.preciseWords);
+
+// largeArray
+
+perf.start();                          // Starts timer
+doublerAppend(largeArray);
+let resultsAppendLarge = perf.stop();  // Stops timer and save time results
+perf.start();
+doublerInsert(largeArray);
+let resultsInsertLarge = perf.stop();
+
+console.log('Results for the largeArray');
+console.log("insert", resultsInsertLarge.preciseWords);
+console.log("append", resultsAppendLarge.preciseWords);
+
+// extraLargeArray was done first
