@@ -2,7 +2,7 @@
 const addToZero = (numbers) => {
     let result = false
     for (let i = 0; i < numbers.length; i++) {
-      for (let j=1; j < numbers.length; j++){
+      for (let j = 1; j < numbers.length; j++){
         if (numbers[i] + numbers[j] === 0) {
           result = true
         } 
